@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ask a Question - MediPear</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Quicksand:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" />
+
+        <link rel="stylesheet" href="../css-files/ask.css" />
+
+</head>
+<body>
+  <div class="ask-container">
+    <div class="back-home-top">
+      <a href="../index.html"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+    </div>
+
+    <h1><i class="fa-solid fa-circle-question"></i> Ask a New Question</h1>
+    <form id="askForm">
+      <div class="form-group">
+        <label for="title">Question Title</label>
+        <input type="text" id="title" placeholder="Summarize your question briefly..." required />
+      </div>
+
+      <div class="form-group">
+        <label for="category">Category</label>
+        <select id="category" required>
+          <option value="">-- Select a category --</option>
+          <option value="Health">Health</option>
+          <option value="Nutrition">Nutrition</option>
+          <option value="Mental Wellness">Mental Wellness</option>
+          <option value="Fitness">Fitness</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="tags">Tags</label>
+        <input type="text" id="tags" placeholder="e.g., anxiety, healthy-diet, sleep" />
+      </div>
+
+      <div class="form-group">
+        <label for="description">Question Details</label>
+        <textarea id="description" placeholder="Provide more context, background, and what you've tried..." required></textarea>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-submit">Submit Question</button>
+        <button type="button" class="btn btn-cancel" id="cancelBtn">Cancel</button>
+      </div>
+    </form>
+  </div>
+
+
+  <script>
+    // cancel button clears form
+    document.getElementById('cancelBtn').addEventListener('click', () => {
+      document.getElementById('askForm').reset();
+    });
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>MediPear</title>
+        <!-- pls add a favicon -->
+
+        <!-- FONTSSSS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Questrial&family=Quicksand:wght@300..700&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- ICONSSSS (font awesome icons) -->
+
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+     !!!OLD!!!-->
+
+        <link
+        	  rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- CSS FILE LINK -->
+        <link rel="stylesheet" href="css-files/style2.css" />
+
+    </head>
+
+    <body>
+        <!-- top bar -->
+        <header>
+            <div class="top-bar">
+                <div class="logo"><a href="#"> MediPear </a></div>
+
+                <div class="search-box">
+                    <span class="fa-solid fa-magnifying-glass"></span>
+                    <input
+                        class="search-input"
+                        type="search"
+                        placeholder="Search Forums..."
+                    />
+                </div>
+
+                <div class="login-box">
+                    <a href="pages/login.html"> Log In </a>
+                </div>
+            </div> <!-- top bar end -->
+        </header>  <!-- header end -->
+
+
+        <span class="circle"> <i class="fa-solid fa-angle-right"></i> </span>
+        <div class="side-navbar">
+            <ul>
+                <li>
+                    <a class="currentlyactive" href="/home"
+                        ><i class="fa fa-fw fa-home"> </i> Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="pages/explore.html"
+                        ><i class="fa-solid fa-compass"></i> Explore
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/communities"
+                        ><i class="fa-solid fa-comment"></i> Communities
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-gift"></i> My Rewards
+                    </a>
+                </li>
+
+                <li>
+                    <a href="pages/articles.html"> <i class="fa-solid fa-book"></i> Articles </a>
+                </li>
+            </ul>
+        </div> <!-- sidenav boar end -->
+
+        <div class="main-content-wrapper">
+            <!-- <div class="ask-question-box">
+                <a href="pages/ask.html">
+                    <i class="fa-solid fa-plus"></i> Ask Question
+                </a>
+            </div>  ask qn box end -->
+
+
+            <div class="middle-main"> <!-- middle main section  -->
+                
+                <div class="sort-bar">
+                    <a class="active" data-sort="trending">Trending Questions</a>
+                    <a data-sort="newest">Newest</a>
+                    <a data-sort="highest-earning">Highest Earning Posts</a>
+                    <a data-sort="unanswered">Unanswered</a>
+                    <a data-sort="recently-answered">Recently Answered</a>
+                </div>
+
+                <span button class="filter-button">
+                    <i class="fa-solid fa-bars"></i> Filter
+                </span>
+
+                <div class="question-list"> <!-- question feed START -->
+                    <!-- question feed -->
+                    <div class="question-box">
+                        <div class="question-body">
+                            <!-- voting column -->
+                            <div class="vote-panel">
+                                <div class="vote-up" onclick="voteUp()"></div>
+                                <span class="vote-count" id="voteCount">0</span>
+                                <div class="vote-down" onclick="voteDown()"alt="Downvote"> </div>
+
+                                <!-- <img
+                                    src="css-files/images/Polygon-green.svg"
+                                    class="vote-up"
+                                    onclick="voteUp()"
+                                    alt="Upvote"
+                                <!-- <span class="vote-count" id="voteCount">0</span>
+                                <img
+                                    src="css-files/images/Polygon-red.svg"
+                                    class="vote-down"
+                                /> -->
+
+                            </div>
+
+                            <!-- main userss content -->
+                            <div class="question-content">
+                                <div class="community-name">Community Name</div>
+                                <h3>
+                                    Which supplements actually help with focus and
+                                    memory?
+                                </h3>
+
+                                <div class="question-tags">
+                                    <span class="tag">supplements</span>
+                                    <span class="tag">focus</span>
+                                </div>
+
+                                <div class="question-answer">
+                                    <p>
+                                        <strong>Top Answer:</strong> Omega-3,
+                                        L-theanine, and Rhodiola are backed by
+                                        studies for cognitive performance.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- question content end -->
+                        </div>
+                        <!-- question body end -->
+                    </div>
+                    <!-- users question box end -->
+
+                    <div class="question-box">
+                        <div class="question-body">
+                            <!-- voting column -->
+                            <div class="vote-panel">
+                                <div class="vote-up" onclick="voteUp()"></div>
+                                <span class="vote-count" id="voteCount">0</span>
+                                <div class="vote-down" onclick="voteDown()"alt="Downvote"> </div>
+                            </div>
+
+                            <!-- main userss content -->
+                            <div class="question-content">
+                                <div class="community-name">Community Name</div>
+                                <h3>ASDWASDWASDWASD</h3>
+
+                                <div class="question-tags">
+                                    <span class="tag">supplements</span>
+                                    <span class="tag">focus</span>
+                                </div>
+
+                                <div class="question-answer">
+                                    <p>
+                                        <strong>Top Answer:</strong>
+                                        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbccccccccccccccccccccccccccccccccc
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- question content end -->
+                        </div>
+                        <!-- question body end -->
+                    </div>
+                    <!-- users question box end -->
+
+                    <div class="question-box">
+                        <div class="question-body">
+                            <!-- voting column -->
+                            <div class="vote-panel">
+                                <div class="vote-up" onclick="voteUp()"></div>
+                                <span class="vote-count" id="voteCount">0</span>
+                                <div class="vote-down" onclick="voteDown()"alt="Downvote"> </div>
+                            </div>
+
+                            <!-- main userss content -->
+                            <div class="question-content">
+                                <div class="community-name">Community Name</div>
+                                <h3>ASDWASDWASDWASD</h3>
+
+                                <div class="question-tags">
+                                    <span class="tag">supplements</span>
+                                    <span class="tag">focus</span>
+                                </div>
+
+                                <div class="question-answer">
+                                    <p>
+                                        <strong>Top Answer:</strong>
+                                        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbccccccccccccccccccccccccccccccccc
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- question content end -->
+                        </div>
+                        <!-- question body end -->
+                    </div>
+                    <!-- users question box end -->
+                </div> <!-- question feed of question boxes END  -->
+                
+            </div> <!-- middle main section END -->
+
+            <div class="side-column"> <!-- side column section START -->
+
+                <div class="ask-question-box"> <a href="pages/ask.html"> <i class="fa-solid fa-plus"></i> Ask Question </a> </div>
+
+                <div class="experts-tab"> <!-- expert tab section start -->
+                    <h3 class="experts-title">Experts of the Week</h3>
+                    <div class="experts-list">
+                        
+                        <div class="expert-card">
+                            <img src="..." class="expert-icon" />
+                            <span class="expert-name">username 1</span>
+
+                            <!-- repeat more expert-card entries -->
+                        </div>  <!-- expert card END --> 
+
+                    </div> <!-- expert list END --> 
+                </div> <!-- expert tab section END --> 
+
+             </div> <!-- side column section END -->
+
+
+    
+        </div>            
+            
+
+        </div> <!-- main content wrapper section end -->
+
+
+
+    </body>
+
+    <script src="main.js"></script>
+
+    <script>
+        // function voteUp() {
+        //     console.log("Voted up!");
+        // }
+
+        // function voteDown() {
+        //     console.log("Voted down!");
+        // }
+
+
+
+    </script>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trending Questions - MediPear</title>
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Quicksand:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" />
+
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css-files/trending.css" />
+  
+
+
+
+</head>
+<body>
+  <div class="back-home-top">
+    <a href="../../index.html"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+  </div>
+
+  <div class="container">
+    <h1><i class="fa-solid fa-fire"></i> Trending Questions</h1>
+    <div class="container">
+  <!-- new question will be injected here -->
+</div>
+
+
+    <div class="question-box">
+      <h2>How can I naturally reduce anxiety without medication?</h2>
+      <div class="tags">
+        <span class="tag">anxiety</span>
+        <span class="tag">mental-health</span>
+        <span class="tag">breathing</span>
+      </div>
+    </div>
+
+    <div class="sort-bar">
+      <label for="sort">Sort answers by:</label>
+      <select class="sort-select" id="sort">
+        <option value="upvoted">Most Upvoted</option>
+        <option value="helpful">Most Helpful</option>
+        <option value="newest">Newest</option>
+        <option value="earning">Highest Earning</option>
+      </select>
+    </div>
+
+    <div class="answer-list">
+      <div class="answer-card">
+        <div class="answer-content">
+          Practicing daily deep breathing and mindfulness meditation really helped me. Try box breathing (inhale 4s, hold 4s, exhale 4s).
+        </div>
+        <div class="token-summary">💰 Earned: 120 tokens • 🏆 32 marked as helpful</div>
+        <div class="answer-actions">
+          <button class="action-btn"><i class="fa-solid fa-thumbs-up"></i> Mark as Helpful</button>
+          <button class="action-btn"><i class="fa-solid fa-flag"></i> Report Misinformation</button>
+        </div>
+      </div>
+
+      <div class="answer-card">
+        <div class="answer-content">
+          Journaling and regular physical activity made a big difference in reducing my anxiety levels over time.
+        </div>
+        <div class="token-summary">💰 Earned: 85 tokens • 🏆 20 marked as helpful</div>
+        <div class="answer-actions">
+          <button class="action-btn"><i class="fa-solid fa-thumbs-up"></i> Mark as Helpful</button>
+          <button class="action-btn"><i class="fa-solid fa-flag"></i> Report Misinformation</button>
+        </div>
+      </div>
+
+      <div class="answer-card">
+        <div class="answer-content">
+          A warm bath, herbal tea, and soft instrumental music is my personal nightly ritual that keeps me calm.
+        </div>
+        <div class="token-summary">💰 Earned: 42 tokens • 🏆 10 marked as helpful</div>
+        <div class="answer-actions">
+          <button class="action-btn"><i class="fa-solid fa-thumbs-up"></i> Mark as Helpful</button>
+          <button class="action-btn"><i class="fa-solid fa-flag"></i> Report Misinformation</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../main.js"></script>
+</body>
+</html>

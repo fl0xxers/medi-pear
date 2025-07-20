@@ -1,0 +1,34 @@
+
+/* Scrollable list inside */
+.experts-list {
+	overflow-y: auto;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+/* Each user card */
+.expert-card {
+	width: 255px;
+	height: 63px;
+	background-color: #261E39;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 10px;
+	border-radius: 10px;
+	color: white;
+	flex-shrink: 0;
+}
+
+.expert-icon {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.expert-name {
+	font-weight: 500;
+}
