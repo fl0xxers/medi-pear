@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rewards - MediPear</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <style>
+    body {
+      background-color: var(--medium-blurple-colour);
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      padding-top: 60px;
+      color: white;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .back-home-top {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    .back-home-top a {
+      background-color: #4248BA;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 14px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .back-home-top a:hover {
+      background-color: #2A2F8A;
+    }
+
+    h1 {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 20px;
+      margin: 30px 0 16px;
+      border-left: 5px solid #5E60CE;
+      padding-left: 12px;
+    }
+
+    .card-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: var(--dark-blurple-colour);
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      font-size: 16px;
+      color: #D8ECFF;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #B8C7E0;
+      line-height: 1.5;
+    }
+
+    .token-badge {
+      background: linear-gradient(to right, #FFD700, #FFA500);
+      color: #333;
+      padding: 4px 10px;
+      font-weight: bold;
+      font-size: 12px;
+      border-radius: 16px;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .back-home-top {
+        position: static;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="back-home-top">
+    <a href="index.html"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+  </div>
+
+  <div class="container">
+    <h1>🎁 Rewards Center</h1>
+
+    <!-- Token Earning -->
+    <div class="section-title"><i class="fa-solid fa-coins"></i> How to Earn Tokens</div>
+    <div class="card-list">
+      <div class="card">
+        <h3>✅ Ask a Question</h3>
+        <p>Earn <span class="token-badge">+10 tokens</span> each time you submit a new question that gets approved.</p>
+      </div>
+      <div class="card">
+        <h3>💬 Answer a Question</h3>
+        <p>Earn <span class="token-badge">+15 tokens</span> for providing helpful answers to the community.</p>
+      </div>
+      <div class="card">
+        <h3>🏆 Marked as Helpful</h3>
+        <p>Get <span class="token-badge">+20 tokens</span> every time your answer is marked as helpful by others.</p>
+      </div>
+      <div class="card">
+        <h3>🔥 Top Weekly Contributor</h3>
+        <p>The top contributor gets a bonus <span class="token-badge">+100 tokens</span> every Sunday.</p>
+      </div>
+    </div>
+
+    <!-- Reward Tiers -->
+    <div class="section-title"><i class="fa-solid fa-trophy"></i> Reward Tiers</div>
+    <div class="card-list">
+      <div class="card">
+        <h3>🥉 Bronze Member</h3>
+        <p>Access to monthly newsletters and community badges. (100+ tokens)</p>
+      </div>
+      <div class="card">
+        <h3>🥈 Silver Member</h3>
+        <p>Eligible for product discounts & sponsor trials. (500+ tokens)</p>
+      </div>
+      <div class="card">
+        <h3>🥇 Gold Member</h3>
+        <p>Early access to expert Q&As and special features. (1000+ tokens)</p>
+      </div>
+      <div class="card">
+        <h3>💎 Expert Level</h3>
+        <p>Featured on homepage + unlock pro rewards. (2000+ tokens)</p>
+      </div>
+    </div>
+
+    <!-- Redeem Section -->
+    <div class="section-title"><i class="fa-solid fa-gift"></i> What You Can Redeem</div>
+    <div class="card-list">
+      <div class="card">
+        <h3>🎉 Digital Badge Packs</h3>
+        <p>Collect themed badges and show off your profile rank.</p>
+      </div>
+      <div class="card">
+        <h3>📚 Premium Health Guides</h3>
+        <p>Download expert-written nutrition & wellness PDFs using your tokens.</p>
+      </div>
+      <div class="card">
+        <h3>👕 Limited Edition Merch</h3>
+        <p>Use your tokens to get exclusive MediPear t-shirts and hoodies.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

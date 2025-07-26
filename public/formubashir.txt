@@ -1,0 +1,15 @@
+// OPEN A SPLIT TERMINAL
+
+1st terminal
+// python app.py
+
+2nd terminal
+// node server.js
+
+
+//Reliable Source 
+According to WHO guidelines published in 2024 (https://pubmed.ncbi.nlm.nih.gov/12345678/), early screening has reduced mortality rates by 30%.
+
+
+//Unreliable
+I heard from my neighbor that vaccines are risky. She read it on a random blog somewhere.

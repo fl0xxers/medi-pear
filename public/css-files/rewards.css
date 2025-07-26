@@ -1,0 +1,120 @@
+
+    :root {
+	--dark-blurple-colour: #0d0014;
+	--medium-blurple-colour: #1b1529;
+	/* side bar */
+
+	--brighter-medium-blurple-colour: #261e39;
+	/* for the posts */
+
+	--brighter-highlighted-blue: #4248ba;
+	--bright-blue: #0676dd;
+
+	--hovered-grey: #2a4055;
+
+	/* for texts */
+	--white-blue: #d8ecff;
+	--white: #ffffff;
+}
+    
+    
+    body {
+      background-color: var(--medium-blurple-colour);
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      padding-top: 60px;
+      color: white;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .back-home-top {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    .back-home-top a {
+      background-color: #4248BA;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 14px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .back-home-top a:hover {
+      background-color: #2A2F8A;
+    }
+
+    h1 {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 20px;
+      margin: 30px 0 16px;
+      border-left: 5px solid #5E60CE;
+      padding-left: 12px;
+    }
+
+    .card-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: var(--dark-blurple-colour);
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      font-size: 16px;
+      color: #D8ECFF;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #B8C7E0;
+      line-height: 1.5;
+    }
+
+    .token-badge {
+      background: linear-gradient(to right, #FFD700, #FFA500);
+      color: #333;
+      padding: 4px 10px;
+      font-weight: bold;
+      font-size: 12px;
+      border-radius: 16px;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .back-home-top {
+        position: static;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+    }
